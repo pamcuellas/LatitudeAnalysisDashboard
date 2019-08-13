@@ -1,17 +1,13 @@
 /***************************************************** RAIN EFFECT **********************************************************************/
-  html {
-	height: 100%;
-  }
   
+
   body {
-	height: 100%;
-	margin: 0;
-	overflow: hidden;
+	/* overflow: hidden; */
 	background: linear-gradient(to bottom, #202020, #111119);
   }
   
   .rain {
-	/* position: absolute; */
+	position: absolute;
 	left: 0;
 	width: 100%;
 	height: 100%;
