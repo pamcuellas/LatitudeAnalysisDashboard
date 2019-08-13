@@ -12,9 +12,99 @@
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/css/customizing.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/rain.css">
+    <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre:700|Lora:400,700&display=swap" rel="stylesheet">
+
     <title>Latitude Dashboard</title>
 </head>
-<body>
+<body class="back-row-toggle splat-toggle">
     
+
+<div class="container-all">
+        <div class="main">
+        
+
+
+    <nav class="navbar navbar-expand-lg navbar-light" >
+        <a class="navbar-brand lattitude" href="#">Lattitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"></li>
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plots
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Max Temperature</a>
+                            <a class="dropdown-item" href="#">Humidity</a>
+                            <a class="dropdown-item" href="#">Cloudiness</a>
+                            <a class="dropdown-item" href="#">Wind Speed</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Comparison</a> <!-- <span class="sr-only">(current)</span> -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Data</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li> -->
+                </ul>
+            </form>
+
+        </div>
+    </nav> 
+    
+    <div class="container"> 
+        <div class="row justify-content-between">
+            <div class="col-lg-7 col-md-7 col-sm-12">
+                <div class="jumbotron">
+                    <h2 class="display-5">Summary: Latitude vs. X</h2>
+                    <hr class="my-4">
+                    <img width="200" src="./assets/images/Latitude_vs_MaxTemperature.png" alt="Latitue vs Max Temperature">
+                    <p>The purpose of this project was to analyse how weather changes as you get closer to the equator. To accomplish this analysis, 
+                        we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+                    <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at 
+                        included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part
+                        of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-5 col-md-5 col-sm-12"> 
+                <div class="jumbotron">
+                    <h3 class="display-5">Visualizations</h3>
+                    <hr class="my-4">
+                    <!-- <div class="row"> -->
+                        <!-- put pictures here  -->
+                    <!-- </div> -->
+                </div>  
+            </div>
+        </div>
+    </div>
+
+    <!-- Make rain -->
+    <div class="rain front-row"></div>
+    <div class="rain back-row"></div>
+
+    </div>		
+</div>
+
+<footer class="footer">
+        <span>© 2019 Copyright Coding Bootcamp 2017</span>
+</footer>
+
+      <script src="./assets/js/rain.js"></script>      
 </body>
 </html>

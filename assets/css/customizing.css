@@ -1,0 +1,175 @@
+
+
+.navbar {
+	padding: 0rem 1rem;
+	z-index: 10;
+	min-width: 350px;
+	background-color: #FFFFFF;
+}
+
+.navbar .lattitude {
+	background-color: #45BABA;
+	color: #FFFFFF;
+	font-weight: 600;
+	font-size: 25px;
+	width: 150px;
+	margin-left: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	min-width: 50px;
+	text-align: center;
+	font-family: 'Abhaya Libre', serif;
+}
+
+.navbar .lattitude:hover {
+	color: rgb(38, 231, 231);
+	transition: all 0.5s ease-in-out;
+}
+
+.space {
+	width: 5%;
+}
+
+.navbar form ul li {
+	font-weight: bold;
+}
+
+.navbar-light .navbar-toggler {
+	border-color: #FFFFFF;
+}
+
+
+.navbar-light .navbar-toggler:hover {
+	border-color: rgb(38, 231, 231);
+	background-color: rgb(38, 231, 231);
+	transition: all 0.5s ease-in-out;
+}
+
+.jumbotron {
+	border-radius: .15rem;
+	background-color: white;
+	color: #45BABA;
+}
+
+.jumbotron p {
+	color: rgba(0,0,0,.5);
+	text-align:justify;
+}
+
+.container {
+	max-width: 100%;
+	font-family: 'Abhaya Libre', serif;
+	font-weight: bolder;
+}
+.row {
+	margin-top: 3%;
+}
+
+img {
+	width: 35%;
+	margin: 3%;
+	float: left;
+}
+
+
+@media screen and (max-width: 991px) {
+	
+	.navbar {
+		background-color: #45BABA;
+	}
+
+
+}
+
+
+* {
+	margin: 0;
+	padding: 0:;
+}
+html, body {
+	height: 100%;
+}
+.container-all {
+	min-height: 100%;
+}	
+.main {
+	overflow: auto; /* To certify that we will get a scroll when the main content exceed the height of the browser. */
+	padding-bottom:  50px; /* Must be exactly the height size of the footer; */
+	z-index: 10;
+}
+.footer {
+	position: relative;
+	background-color:  #636363;
+	height: 50px;
+	margin-top: -50px; /* The reason we are putting this line here is because container is already  a 100% and will push the footer bellow exceeding the browser size. So with this negative margin-top will make the browse fulled but not with an unecessary scrool.*/
+	border-top: 3px solid #45BABA;
+	display: flex;
+	flex-direction: column; 
+	justify-content: center;
+}
+
+
+.footer span {
+    font-family: 'Montserrat', sans-serif;
+	font-size: 0.7rem;
+	text-align: center;
+	color: white;
+}
+
+
+
+
+
+
+
+/****************************************************************** OLD CODE *******************************************************************/
+
+/* .navbar-inverse .navbar-nav > li > a {
+	color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+	color: #B4E0E0;
+}
+
+.navbar-inverse .navbar-brand {
+	color: white;	
+}
+
+.navbar-inverse .navbar-brand:hover {
+	color: #B4E0E0;	
+}
+
+
+.jumbotron {
+	background-color: #ecf0f1;
+}
+
+.container {
+	margin-top: 80px;
+}
+body {
+	background: url("https://images.unsplash.com/photo-1510148199876-8a856ee41d42?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a82c3751ed73cbbd31bbaef3d7233a83&auto=format&fit=crop&w=500&q=60");
+	background-size: cover;
+	background-position: center;
+}
+
+h1 {
+	text-align: center;
+ 	text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 
+				 0px 8px 13px rgba(0,0,0,0.1), 
+				 0px 18px 23px rgba(0,0,0,0.1)  
+}
+
+p {
+	text-align: center;
+}
+
+
+.thumbnail {
+    background: #2c3e50;
+} */
+
+
+/*DARK BLUE #2c3e50 */;
+/*LIGHT GRAY: #ecf0f1*/
