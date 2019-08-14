@@ -29,11 +29,11 @@ html, body {
 	background-color: #45BABA;
 	color: #FFFFFF;
 	font-weight: 600;
-	font-size: 25px;
+	font-size: 30px;
 	width: 150px;
 	margin-left: 50px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	min-width: 50px;
 	text-align: center;
 	font-family: 'Abhaya Libre', serif;
@@ -85,13 +85,24 @@ html, body {
 	margin-top: 3%;
 }
 
-img {
+#first-picture {
 	width: 35%;
-	margin: 3%;
+	margin: 2% 3.5% 1.5% 0%;
 	float: left;
 }
 
+.second-picture {
+	width: inherit;
+	/* min-width: 40%; */
+	margin-bottom: 2%;
+	/* max-width: 100%; */
+}
 
+hr {
+	/* border-style: groove; */
+	border-color: #45BABA;
+	opacity: 0.3;
+}
 
 .footer {
 	position: relative;
@@ -118,6 +129,14 @@ img {
 	.navbar {
 		background-color: #45BABA;
 	}
+
+	.jumbotron p {
+		font-size: 1.3rem;
+	}
+	/* #first-picture {
+		width: 45%;
+
+	} */
 	
 }
 
