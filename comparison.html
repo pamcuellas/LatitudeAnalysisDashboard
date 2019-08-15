@@ -12,8 +12,7 @@
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
-        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/234c8d2765.js"></script>
     <link rel="stylesheet" type="text/css" href="./assets/css/customizing.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/comparison.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/rain.css">
@@ -27,85 +26,110 @@
     <div class="rain front-row"></div>
     <div class="rain back-row"></div>
     
+    <div class="container-all ">
+        <div class="main">
 
-<div class="container-all ">
-    <div class="main">
+            <nav class="navbar navbar-expand-lg navbar-light" >
+                <a class="navbar-brand lattitude" href="index.html">Lattitude</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-        <nav class="navbar navbar-expand-lg navbar-light" >
-            <a class="navbar-brand lattitude" href="index.html">Lattitude</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"></li>
-                </ul>
-
-                <form class="form-inline my-2 my-lg-0">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Plots
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="maxtemperature.html">Max Temperature</a>
-                                <a class="dropdown-item" href="#">Humidity</a>
-                                <a class="dropdown-item" href="#">Cloudiness</a>
-                                <a class="dropdown-item" href="#">Wind Speed</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#">Comparison</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Data</a>
-                        </li>
+                        <li class="nav-item"></li>
                     </ul>
-                </form>
 
-            </div>
-        </nav> 
-    
-        <div class="container-comparison"> 
-            <div class="jumbotron">
-                <h2 class="display-5">Comparison: Latitude vs X</h2>
-                <hr class="my-4">
-                <p>Click any plot to get an in-depth analysis.</p>
-                <div class="row justify-content-around"> 
-                    <div class="col-md-6 col-12">
-                        <div class="pictures">
-                            <h3>vs. Max Temperature</h3>
-                            <img src="./assets/images/Latitude_vs_MaxTemperature.png"   alt="Latitude vs Max Temperature">
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-12">
-                        <div class="pictures">
-                            <h3>vs. Humidity</h3>
-                            <img src="./assets/images/Latitude_vs_Humidity.png"         alt="Latitude vs Humidity">
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-12">
-                        <div class="pictures">
-                            <h3>vs. Cloudiness</h3>
-                            <img src="./assets/images/CityLatitude_vs_Cloudiness.png"   alt="City Latitude vs Cloudiness">
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-12">
-                        <div class="pictures">
-                            <h3>vs. Wind Speed</h3>
-                            <img src="./assets/images/Latitude_vs_WindSpeed.png"        alt="Latitude vs Wind Speed">
-                        </div>
-                    </div>
-                </div>   
-            </div>
-        </div>
-    </div>		
+                    <form class="form-inline my-2 my-lg-0">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="fas fa-chart-area fa-fw fa-lg"></span>
+                                    Plots
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="maxtemperature.html">
+                                        <span class="fas fa-thermometer-three-quarters fa-fw fa-lg"></span>
+                                        Max Temperature
+                                    </a>
+                                    <a class="dropdown-item" href="humidity.html">
+                                        <span class="fas fa-cloud-showers-heavy fa-fw fa-lg"></span>
+                                        Humidity
+                                    </a>
+                                    <a class="dropdown-item" href="cloudiness.html">
+                                        <span class="fas fa-cloud-sun fa-fw fa-lg"></span>
+                                        Cloudiness
+                                    </a>
+                                    <a class="dropdown-item" href="windspeed.html">
+                                        <span class="fas fa-wind fa-fw fa-lg"></span>
+                                        Wind Speed
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="comparison.html">
+                                    <span class="fas fa-balance-scale fa-fw fa-lg"></span>
+                                    Comparison
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span class="fas fa-database fa-fw fa-lg"></span>    
+                                    Data
+                                </a>
+                            </li>
+                        </ul>
+                    </form>
 
-</div>
-<footer class="footer">
-        <span>© 2019 Copyright Coding Bootcamp 2017</span>
-</footer>
+                </div>
+            </nav> 
+
+            <div class="container-comparison"> 
+                <div class="jumbotron">
+                    <h2 class="display-5"><span class="fas fa-balance-scale" style="margin-right: 10px;"></span>Comparison: Latitude vs X</h2>
+                    <hr class="my-4">
+                    <p>Click any plot to get an in-depth analysis.</p>
+                    <div class="row justify-content-around"> 
+                        <div class="col-md-6 col-12">
+                            <div class="pictures">
+                                <h3>vs. Max Temperature</h3>
+                                <a href="./maxtemperature.html">
+                                    <img src="./assets/images/Latitude_vs_MaxTemperature.png" alt="Latitude vs Max Temperature" >
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="pictures">
+                                <h3>vs. Humidity</h3>
+                                <a href="./humidity.html">
+                                    <img src="./assets/images/Latitude_vs_Humidity.png" alt="Latitude vs Humidity">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="pictures">
+                                <h3>vs. Cloudiness</h3>
+                                <a href="./cloudiness.html">
+                                    <img src="./assets/images/CityLatitude_vs_Cloudiness.png" alt="City Latitude vs Cloudiness">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="pictures">
+                                <h3>vs. Wind Speed</h3>
+                                <a href="./windspeed.html">
+                                    <img src="./assets/images/Latitude_vs_WindSpeed.png" alt="Latitude vs Wind Speed">
+                                </a>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>		
+    </div>
+    <footer class="footer">
+            <span>©  Copyright Coding Bootcamp 2019</span>
+    </footer>
 
     <script src="./assets/js/rain.js"></script>      
 </body>

@@ -13,10 +13,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/234c8d2765.js"></script>
-
     <link rel="stylesheet" type="text/css" href="./assets/css/customizing.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/rain.css">
-    <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre:700|Sree+Krushnadevaraya|Lora:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre:700|Lora:400,700&display=swap" rel="stylesheet">
 
     <title>Latitude Dashboard</title>
 </head>
@@ -53,7 +52,7 @@
                                         <span class="fas fa-thermometer-three-quarters fa-fw fa-lg"></span>
                                         Max Temperature
                                     </a>
-                                    <a class="dropdown-item" href="humidity.html">
+                                    <a class="dropdown-item disabled" href="humidity.html">
                                         <span class="fas fa-cloud-showers-heavy fa-fw fa-lg"></span>
                                         Humidity
                                     </a>
@@ -74,7 +73,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="data.html">
+                                <a class="nav-link" href="#">
                                     <span class="fas fa-database fa-fw fa-lg"></span>    
                                     Data
                                 </a>
@@ -85,64 +84,46 @@
                 </div>
             </nav> 
         
-            <div class="container"> 
+            <div class="container">
                 <div class="row justify-content-around">
                     <div class="col-lg-7">
                         <div class="jumbotron">
-                            <h2 class="display-5"><span class="fas fa-cloud-sun-rain" style="margin-right: 10px;"></span>Summary: Latitude vs. X</h2>
+                            <h2 class="display-5"><span class="fas fa-cloud-showers-heavy" style="margin-right: 10px;"></span>Humidity</h2>
                             <hr class="my-4">
-                            <img id="first-picture" src="./assets/images/Latitude_vs_MaxTemperature.png" alt="Latitude vs Max Temperature">
-                            <p>The purpose of this project was to analyse how weather changes as you get closer to the equator. To accomplish this analysis, 
-                                we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
-                            <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at 
-                                included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part
-                                of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+                            <div class="visualization"> 
+                                <img src="./assets/images/Latitude_vs_Humidity.png"   alt="Latitude vs Humidity">
+                                <p>As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year than the northern hemisphere. This may be due to the tilt of the earth at the time of the year this data was gathered.</p>
+                            </div>   
                         </div>
                     </div>
+
                     <div class="col-lg-4"> 
                         <div class="jumbotron">
                             <h3 class="display-5"><span class="fas fa-binoculars" style="margin-right: 10px;"></span>Visualizations</h3>
                             <hr class="my-4">
-                            <div class="row justify-content-around"> 
+                            <div class="row justify-content-between"> 
                                 <div class="col-lg-6 col-md-3 col-sm-6 col-12">
-                                    <div class="pictures">
-                                        <a href="./maxtemperature.html">
-                                            <img class="block-pictures" src="./assets/images/Latitude_vs_MaxTemperature.png" alt="Latitude vs Max Temperature" >
-                                        </a>
-                                    </div>
+                                    <img class="block-pictures" src="./assets/images/Latitude_vs_MaxTemperature.png" alt="Latitude vs Max Temperature">
                                 </div>
                                 <div class="col-lg-6 col-md-3 col-sm-6 col-12">
-                                    <div class="pictures">
-                                        <a href="./humidity.html">
-                                            <img class="block-pictures" src="./assets/images/Latitude_vs_Humidity.png" alt="Latitude vs Humidity">
-                                        </a>
-                                    </div>
+                                    <img class="block-pictures  graph-selected" src="./assets/images/Latitude_vs_Humidity.png" alt="Latitude vs Humidity">
                                 </div>
                                 <div class="col-lg-6 col-md-3 col-sm-6 col-12">
-                                    <div class="pictures">
-                                        <a href="./cloudiness.html">
-                                            <img class="block-pictures" src="./assets/images/CityLatitude_vs_Cloudiness.png" alt="City Latitude vs Cloudiness">
-                                        </a>
-                                    </div>
+                                    <img class="block-pictures" src="./assets/images/CityLatitude_vs_Cloudiness.png" alt="City Latitude vs Cloudiness">
                                 </div>
                                 <div class="col-lg-6 col-md-3 col-sm-6 col-12">
-                                    <div class="pictures">
-                                        <a href="./windspeed.html">
-                                            <img class="block-pictures" src="./assets/images/Latitude_vs_WindSpeed.png" alt="Latitude vs Wind Speed">
-                                        </a>
-                                    </div>
+                                    <img class="block-pictures" src="./assets/images/Latitude_vs_WindSpeed.png" alt="Latitude vs Wind Speed">
                                 </div>
-                            </div>
+                            </div>   
                         </div>  
                     </div>
                 </div>
             </div>
-        </div>		
+        </div>	
     </div>
     <footer class="footer">
             <span>©  Copyright Coding Bootcamp 2019</span>
     </footer>
-
     <script src="./assets/js/rain.js"></script>      
 </body>
 </html>

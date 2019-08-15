@@ -6,17 +6,15 @@
 html, body {
 	height: 100%;
 }
-	
 
 .container-all {
 	min-height: 100%;
 	background-color: #212529;
   }
 
-
 .main {
-	overflow: auto; /* To certify that we will get a scroll when the main content exceed the height of the browser. */
-	padding-bottom:  53px; /* Must be exactly the height size of the footer; */
+	overflow: auto; 
+	padding-bottom: 53px; 
 }
 
 .navbar {
@@ -27,9 +25,10 @@ html, body {
 }
 
 .navbar .lattitude {
-	background-color: #45BABA;
+	background-color: #00A5A5;
 	color: #FFFFFF;
-	font-weight: 600;
+	font-weight: bolder;
+	font-stretch: ultra-expanded; 
 	font-size: 30px;
 	width: 150px;
 	margin-left: 50px;
@@ -41,7 +40,7 @@ html, body {
 }
 
 .navbar .lattitude:hover {
-	color: rgb(38, 231, 231);
+	color: #DFDFDF;
 	transition: all 0.5s ease-in-out;
 }
 
@@ -49,25 +48,43 @@ html, body {
 	width: 5%;
 }
 
+
+/* Navbar btn */
+.navbar-light .navbar-toggler {
+	border-color: #FFFFFF;
+}
+.navbar-light .navbar-toggler:hover {
+	background-color: #DFDFDF;
+	transition: all 0.3s ease-in-out;
+}
+
+/* Links menu */ 
+.navbar-light .navbar-nav .active>.nav-link, 
+.navbar-light .navbar-nav .nav-link.active, 
+.navbar-light .navbar-nav .nav-link.show, 
+.navbar-light .navbar-nav .show>.nav-link, 
+.navbar-light .navbar-nav .nav-link.disabled {
+	color:  #00A5A5;
+	opacity: 0.4;
+}
+.navbar-light .navbar-nav .nav-link,
+.dropdown-menu a {
+    color:  #00A5A5;
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.dropdown-menu a:hover {
+    color:  #00A5A5;
+	opacity: 0.4;
+}
 .navbar form ul li {
 	font-weight: bold;
 }
 
-.navbar-light .navbar-toggler {
-	border-color: #FFFFFF;
-}
-
-
-.navbar-light .navbar-toggler:hover {
-	border-color: rgb(38, 231, 231);
-	background-color: rgb(38, 231, 231);
-	transition: all 0.5s ease-in-out;
-}
 
 .jumbotron {
 	border-radius: .15rem;
 	background-color: white;
-	color: #45BABA;
+	color: #00A5A5;
 	margin:0; 
     padding: 2.5rem 2rem 1.5rem 2rem;
 }
@@ -89,9 +106,9 @@ html, body {
 }
 
 #first-picture {
-	width: 45%;
-	margin: 2% 5% 2% 0%;
+	width: 50%;
 	float: left;
+	max-width: 340px;
 }
 
 .second-picture {
@@ -100,7 +117,7 @@ html, body {
 }
 
 hr {
-	border-color: #45BABA;
+	border-color: #00A5A5;
 	opacity: 0.3;
 }
 
@@ -108,8 +125,8 @@ hr {
 	position: relative;
 	background-color:  #636363;
 	height: 50px;
-	margin-top: -50px; /* The reason we are putting this line here is because container is already  a 100% and will push the footer bellow exceeding the browser size. So with this negative margin-top will make the browse fulled but not with an unecessary scrool.*/
-	border-top: 3px solid #45BABA;
+	margin-top: -50px; 
+	border-top: 3px solid #00A5A5;
 	display: flex;
 	flex-direction: column; 
 	justify-content: center;
@@ -122,26 +139,88 @@ hr {
 	color: white;
 }
 
+.visualization,
+.pictures,
+.pictures a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.visualization img {
+	width: 90%;
+    margin: 1% 3% 3% 3%;
+}
+
+.pictures img {
+    width: 100%;
+    margin: 3% 0% 3% 0%;
+    cursor: pointer;
+	z-index: 10;
+	border: 3px double #FFFF;
+}
+
+.block-pictures {
+    width: 100%;
+	padding: 0% 0% 0% 0%;
+}
+
+.pictures img:hover {
+	border-color: #00A5A5;
+}
+
+.pictures a {
+    z-index: 10;    
+}
+
+.pictures h3 {
+    margin-top: 2%;
+}
+
 .graph-selected {
-	border: 5px double #45BABA; 
+	border: 3px double #00A5A5; 
 }
 
 
-@media screen and (max-width: 991px) {
-	
-	.navbar {
-		background-color: #45BABA;
-	}
 
+@media screen and (max-width: 991px) {
+	.navbar {
+		background-color: #00A5A5;
+	}
 	.jumbotron p {
 		font-size: 1.3rem;
 	}
-
 	.col-lg-4,
 	.col-lg-7
 	 {
 		margin-bottom: 3%;
 	}
+	/********************** DROPDOWN *****************************************************/
+	.dropdown-menu {
+		border:none;
+		border-radius: 0rem;
+		background-color: white;
+	}
+	.navbar-collapse {
+		background-color: white;
+		margin-left: -20px;
+		margin-right: -20px;
+		padding: 1% 5% 1% 5%;
+	} 
+	/* form ul li:hover */
+	form ul li {
+		padding-left: 3%;
+		margin-left: -40px;
+	}
+	.form-inline {
+		display: inline;
+	}
+
+	.navbar .lattitude {
+		margin-left: 0px;
+	}
 
 }
+
 
