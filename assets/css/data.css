@@ -1,12 +1,24 @@
+
+.container-data {
+    margin-top:3%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.container-data .jumbotron p {
+    font-size: 1.1rem;
+}
+
 .table {
     color: #00A5A5;
-    font-family: 'Abhaya Libre', serif
+    font-size: 12px; 
+    font-weight: bolder;
 }
 
 .cities-table-tr{
-    color: purple;
+    color: #FFFFFF;
+    background-color: #00A5A5;
 }
-
 
 th, td {
     text-align: center;
@@ -15,5 +27,50 @@ th, td {
 td:nth-child(2){
     text-align: left;
     text-transform: capitalize;
-    max-width: 10%;
+    max-width: 8%;
+}
+
+@media screen and (max-width: 800px) {
+    .table {
+        font-size: 11px; 
+        font-weight: 400;
+    }
+
+    .container-data {
+        padding-right: 2px;
+        padding-left: 2px;
+    }
+
+    .container-data .jumbotron p {
+        font-size: 1rem;
+    }
+    
+    .my-4 {
+        margin-bottom: 1rem!important;
+        margin-top: 1rem!important;    
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .table {
+        font-size: 7px; 
+        font-weight: bold;
+    }
+
+    .container-data .jumbotron{
+        padding: 0.9rem 0.5rem 0.5rem 1rem;
+    }
+    .container-data .jumbotron h2 {
+        font-size: 1.5rem;
+    }
+    .container-data .jumbotron p {
+        font-weight: bolder;
+        font-size: 0.7rem;
+    }
+
+    .my-4 {
+        margin-bottom: 0.5rem!important;
+        margin-top: 0.5rem!important;    
+    }
+    
 }
