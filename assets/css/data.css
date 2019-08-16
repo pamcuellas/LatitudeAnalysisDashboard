@@ -1,0 +1,19 @@
+.table {
+    color: #00A5A5;
+    font-family: 'Abhaya Libre', serif
+}
+
+.cities-table-tr{
+    color: purple;
+}
+
+
+th, td {
+    text-align: center;
+}
+
+td:nth-child(2){
+    text-align: left;
+    text-transform: capitalize;
+    max-width: 10%;
+}
