@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Abhaya+Libre:700|Roboto|Roboto+Condensed|Montserrat|Lora:400,700&display=swap");
+
 
 * {
 	margin: 0;
@@ -11,6 +13,13 @@ html, body {
 	min-height: 100%;
 	background-color: #212529;
   }
+
+ .container-comparison {
+    width: 85%;
+    margin: 5% auto;
+	/*font-family: 'Abhaya Libre', serif;*/
+	font-weight: bolder;
+}
 
 .main {
 	overflow: auto; 
@@ -62,7 +71,7 @@ html, body {
 .navbar-light .navbar-nav .show>.nav-link, 
 .navbar-light .navbar-nav .nav-link.disabled {
 	color:  #00A5A5;
-	opacity: 0.4;
+	opacity: 0.5;
 }
 .navbar-light .navbar-nav .nav-link,
 .dropdown-menu a {
@@ -71,7 +80,7 @@ html, body {
 .navbar-light .navbar-nav .nav-link:hover,
 .dropdown-menu a:hover {
     color:  #00A5A5;
-	opacity: 0.4;
+	opacity: 0.5;
 }
 .navbar form ul li {
 	font-weight: bold;
@@ -194,6 +203,7 @@ hr {
 		background-color: #00A5A5;
 	}
 	.col-lg-4,
+	.col-lg-6,
 	.col-lg-7
 	 {
 		margin-bottom: 3%;
