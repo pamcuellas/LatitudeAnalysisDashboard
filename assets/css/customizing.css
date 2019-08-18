@@ -156,7 +156,6 @@ hr {
 	color: white;
 }
 
-.visualization,
 .pictures,
 .pictures a {
     display: flex;
@@ -245,5 +244,9 @@ hr {
 @media screen and (max-width: 600px) {
 	.visualization img {
 		width: 90%;
+	}
+
+	.visualization{
+		flex-direction: column;
 	}
 }
